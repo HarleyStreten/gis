@@ -1,0 +1,56 @@
+.managePanel {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 0 auto;
+    width: 1200px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 6fr 5.5fr;
+    /* столбцы: имеется ширина сайта, один столбец будет занимать 2/12 ширины,
+                                       а другой 10/12 */
+    grid-template-rows: 1fr 2.5fr 5fr 1.1fr;
+    /* строки: одна строка сверху будет занимать 60px,
+                                       а строка снизу всю оставшуюся часть*/
+    grid-template-areas:
+  "header header"
+  "area-1 area-2"
+  "area-3 area-4"
+  "footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.areaOne {
+    grid-area: area-1;
+}
+
+.areaTwo {
+    grid-area: area-2;
+}
+
+.areaThree {
+    grid-area: area-3;
+}
+
+.areaFour {
+    grid-area: area-4;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.footerImage{
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    margin-left: 1050px;
+}
+
+.manage-panel-button {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 100px; /* Положение от нижнего края */
+    right: 30px; /* Положение от правого края */
+    z-index: 1;
+}

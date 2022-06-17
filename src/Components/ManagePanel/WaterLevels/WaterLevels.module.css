@@ -1,0 +1,97 @@
+.waterLevelsBlock {
+    margin-left: 30px;
+}
+
+.head {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+.underStroke {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 105px;
+    color: #B6B6B6;
+}
+
+.daysForecast {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #FFFFFF;
+}
+
+.boxCalendar {
+    position: absolute;
+    width: 552px;
+    height: 80px;
+
+    background: #95A8AF;
+}
+
+.buildButton {
+    position: absolute;
+}
+
+.reloadButton {
+    position: absolute;
+    width: 190px;
+    height: 46px;
+    margin-left: 281.01px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-indent: 5px;
+
+    cursor: pointer;
+
+    color: #53737E;
+    background-color: #FFFFFF;
+    border: 0;
+    outline: none;
+}
+
+.reloadButton:hover,
+.reloadButton:focus {
+    color: #3D4D53;
+}
+
+.reloadButton:active {
+    color: #2D3639;
+}
+
+.elementsPosition {
+    display: flex;
+    align-items: stretch;
+    margin-top: 15px;
+}

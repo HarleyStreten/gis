@@ -83,7 +83,7 @@ export default function SignIn() {
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
                         >
-                            Войти
+                            Войти в аккаунт
                         </Button>
                     </Box>
                 </Box>

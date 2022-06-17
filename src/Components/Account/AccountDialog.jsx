@@ -1,7 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Button from '@mui/material/Button';
-import { styled } from '@mui/material/styles';
+import {styled} from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
@@ -10,8 +10,9 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import SignIn from "./Account";
+import {Routes, Route, Link} from "react-router-dom";
 
-const BootstrapDialog = styled(Dialog)(({ theme }) => ({
+const BootstrapDialog = styled(Dialog)(({theme}) => ({
     '& .MuiDialogContent-root': {
         padding: theme.spacing(2),
     },
@@ -21,10 +22,10 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 }));
 
 const BootstrapDialogTitle = (props) => {
-    const { children, onClose, ...other } = props;
+    const {children, onClose, ...other} = props;
 
     return (
-        <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
+        <DialogTitle sx={{m: 0, p: 2}} {...other}>
             {children}
             {onClose ? (
                 <IconButton
@@ -37,7 +38,7 @@ const BootstrapDialogTitle = (props) => {
                         color: (theme) => theme.palette.grey[500],
                     }}
                 >
-                    <CloseIcon />
+                    <CloseIcon/>
                 </IconButton>
             ) : null}
         </DialogTitle>
@@ -61,9 +62,11 @@ export default function Login() {
 
     return (
         <div>
-            <Button variant="contained" onClick={handleClickOpen}>
-                Войти
-            </Button>
+            <Link to="/login">
+                <Button variant="contained" onClick={handleClickOpen}>
+                    Войти
+                </Button>
+            </Link>
             <BootstrapDialog
                 onClose={handleClose}
                 aria-labelledby="customized-dialog-title"
@@ -73,7 +76,7 @@ export default function Login() {
                     Вход в панель управления
                 </BootstrapDialogTitle>
                 <DialogContent dividers>
-                    <SignIn />
+                    <SignIn/>
                 </DialogContent>
             </BootstrapDialog>
         </div>
