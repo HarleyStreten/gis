@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+:root{
+    /*Text*/
+    --font-size-small: 12px;
+    --font-size-medium: 18px;
+    --font-size-big: 24px;
+    --font-family: 'Oswald', sans-serif;
+    --font-color-dark: #000000;
+    --font-color-medium: #53737E;
+    --font-color-light: #FFFFFF;
+
+    /*Background*/
+    --background-color-dark: #53737E;
+    --background-color-light: #FFFFFF;
+    --background-image-calendar: url(./img/calendar.png);
+    --background-image-graph: url(./img/chart.png);
+    --background-image-file: url(./img/files.png);
+    --background-image-gps: url(./img/gps.png);
+    --background-image-minus: url(./img/minus.png);
+    --background-image-plus: url(./img/plus.png);
+
+    --background-image-repeat: no-repeat;
+
+    /*Border*/
+    --border-radius-big: 20px;
+    --border-radius-small: 5px;
+    --border-color: #53737E;
+    --border-width-big: 2px;
+    --border-width-small: 1px;
+}
