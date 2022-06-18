@@ -38,7 +38,15 @@ const App = () => {
         </div>*/
 
         <div>
-            <ManagePanel/>
+            <header>
+                <Link to="/manage">ManagePanel</Link>
+                <Link to="/constructor">Constructor</Link>
+            </header>
+
+            <Routes>
+                <Route path="/manage" element={<ManagePanel/>}/>
+                <Route path="/constructor" element={<Constructor/>}/>
+            </Routes>
         </div>
     );
 }
