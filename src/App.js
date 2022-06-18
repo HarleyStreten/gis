@@ -7,6 +7,7 @@ import SearchBar from "./Components/SearchBar/SearchBar";
 import Login from "./Components/Account/AccountDialog";
 import Geolocation from "./Components/Geolocation/Geolocation";
 import ManagePanel from "./Components/ManagePanel/ManagePanel";
+import Constructor from "./Components/ManagePanel/ConstructorPanel/Constructor/Constructor";
 
 const App = () => {
     return (

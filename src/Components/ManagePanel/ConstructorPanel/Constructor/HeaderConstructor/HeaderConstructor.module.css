@@ -1,0 +1,58 @@
+.headerBlock {
+    margin-left: 30px;
+}
+
+.head {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+    color: #53737E;
+}
+
+.headTwo {
+    padding-bottom: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.headElemenents {
+    display: flex;
+    align-items: stretch;
+    margin-top: 15px;
+    margin-left: 170px;
+    padding-bottom: 15px;
+}
+
+.closeButton {
+    margin-left: 150px;
+}
+
+.multiSelect {
+    width: 550px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #4A504B;
+}
+
+.zeroPosts {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #DA5A5A;
+}

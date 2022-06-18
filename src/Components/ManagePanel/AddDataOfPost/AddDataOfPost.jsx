@@ -3,18 +3,6 @@ import Parameter from "./Parameter/Parameter";
 import Button from './../../../UI Components/Button/Button';
 
 const AddDataOfPost = (props) => {
-    /*
-        let dataOfPosts = {
-            parameters: [
-                {headParam: 'Дата', midParam: "27.06.2022", endParam: ""},
-                {headParam: 'Уровень воды', midParam: "500", endParam: "см"},
-                {headParam: 'Температура воздуха', midParam: "500", endParam: "°C"},
-                {headParam: 'Атмосферное давление', midParam: "760", endParam: "мм рт. ст."},
-                {headParam: 'Скорость ветра', midParam: "2", endParam: "м/с"},
-                {headParam: 'Толщина снежного покрова', midParam: "58", endParam: "см"},
-                {headParam: 'Количество осадков', midParam: "500", endParam: "мм"},
-            ]
-        }*/
 
     return (
         <div className={s.AddDataPostBlock}>

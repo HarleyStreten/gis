@@ -1,0 +1,44 @@
+.constructor {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 0 auto;
+    width: 616px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 12fr;
+    /* столбцы: имеется ширина сайта, один столбец будет занимать 2/12 ширины,
+                                       а другой 10/12 */
+    grid-template-rows: 2fr 1.7fr 5.2fr 0.9fr 0.8fr;
+    /* строки: одна строка сверху будет занимать 60px,
+                                       а строка снизу всю оставшуюся часть*/
+    grid-template-areas:
+    "header"
+    "areaOne"
+    "areaTwo"
+    "areaThree"
+    "footer";
+}
+
+.header {
+    grid-area: header;
+    padding-bottom: 30px;
+}
+
+.areaOne {
+    grid-area: areaOne;
+}
+
+.areaTwo {
+    grid-area: areaTwo;
+}
+
+.areaThree {
+    grid-area: areaThree;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.createReportButton {
+    margin-left: 230px;
+}
