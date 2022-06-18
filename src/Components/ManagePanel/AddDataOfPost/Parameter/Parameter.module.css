@@ -1,0 +1,78 @@
+.parameterBlock {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 2.5fr 3.5fr 1.5fr;
+    /* столбцы: имеется ширина сайта, один столбец будет занимать 2/12 ширины,
+                                       а другой 10/12 */
+    grid-template-rows: 1fr;
+    /* строки: одна строка сверху будет занимать 60px,
+                                       а строка снизу всю оставшуюся часть*/
+    grid-template-areas:
+    "headParam midParam endParam";
+}
+
+.headParam {
+    grid-area: headParam;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: #53737E;
+}
+
+.midParam {
+    grid-area: midParam;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    text-indent: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    white-space: normal;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: left;
+}
+
+.midParam::placeholder {
+    position: absolute;
+    margin-top: 8px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-indent: 15px;
+
+    color: #B5B5B5;
+}
+
+.midParam:focus {
+    outline: 1px solid #929292;
+}
+
+.endParam {
+    grid-area: endParam;
+    margin-left: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}

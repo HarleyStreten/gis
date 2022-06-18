@@ -1,0 +1,55 @@
+.head {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.headTwo {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.boxCalendar {
+    position: absolute;
+    width: 444px;
+    height: 80px;
+
+    background: #95A8AF;
+}
+
+.daysForecast {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #FFFFFF;
+}
+
+.makeForecast {
+    position: absolute;
+    margin-top: 110px;
+}
