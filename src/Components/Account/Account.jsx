@@ -12,6 +12,8 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import api from '../../Api/api';
+import { setAccessToken } from '../../Api/helpers';
 
 function Copyright(props) {
     return (
@@ -36,6 +38,12 @@ export default function SignIn() {
             email: data.get('email'),
             password: data.get('password'),
         });
+
+        api.auth.direct(data.get('email'), data.get('password')).then(result => {
+            if (result.status) {
+                setAccessToken(result.response.access_token);
+            }
+        })
     };
 
     return (
