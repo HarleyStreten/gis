@@ -5,46 +5,14 @@ import MenuItem from '@mui/material/MenuItem';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import MenuIcon from '@mui/icons-material/Menu';
 import {Fab} from "@mui/material";
+import usePosts from '../../Api/hooks/usePosts';
 
-const options = [
-    'р. Ай (Метели)',
-    'р. Ашкадар (Новофедоровка)',
-    'р. Белая (Андреевка)',
-    'р. Белая (Арский Камень)',
-    'р. Белая (Бирск)',
-    'р. Белая (Ишимбай)',
-    'р. Белая (Кушнаренково)',
-    'р. Белая (Охлебинино)',
-    'р. Белая (Старосубхангулово)',
-    'р. Белая (Сыртланово)',
-    'р. Белая (Уфа)',
-    'р. Белая (ж-д станция Шушпа)',
-    'р. Большой Ик (Мраково)',
-    'р. Быстрый Танып (Алтаево)',
-    'р. Инзер (Азово)',
-    'р. Лемеза (Нижние Лемезы)',
-    'р. Нугуш (Андреевский)',
-    'р. Нугуш (Новосеитово)',
-    'р. Сарс (Султанбеково)',
-    'р. Стерля (Отрадовка)',
-    'р. Тюй (Гумбино)',
-    'р. Уршак (Ляхово)',
-    'р. Усень (Туймазы)',
-    'р. Уфа (Верхний Суян)',
-    'р. Уфа (Караидель)',
-    'р. Уфа (Красная горка)',
-    'р. Уфа (Муллакаево)',
-    'р. Уфа (Уровень верхнего бьефа Павловка)',
-    'р. Уфа (Уровень нижнего бьефа Павловка)',
-    'р. Уфа (Шакша)',
-    'р. Чермасан (Новоюмраново)',
-    'р. Юрюзань (Атняш)',
-    'р. Юрюзань (Чулпан)',
-];
 
 const ITEM_HEIGHT = 48;
 
 export default function LongMenu() {
+    const posts = usePosts();
+
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -83,9 +51,9 @@ export default function LongMenu() {
                     },
                 }}
             >
-                {options.map((option) => (
-                    <MenuItem key={option} selected={option === 'р. Ай (Метели)'} onClick={handleClose}>
-                        {option}
+                {posts?.map(({ id, name }) => (
+                    <MenuItem key={id} selected={name === 'р. Ай (Метели)'} onClick={handleClose}>
+                        {name}
                     </MenuItem>
                 ))}
             </Menu>
