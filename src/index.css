@@ -17,11 +17,13 @@ header {
   padding: 2rem 0;
   text-align: center;
 }
+
 header > a {
   color: white;
   text-decoration: none;
   padding: 0 1rem;
 }
+
 header > a:hover {
   color: #FFFFFF;
   text-decoration: underline;

@@ -11,6 +11,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import SignIn from "./Account";
 import {Routes, Route, Link} from "react-router-dom";
+import MapComponent from "../Map/MapComponent";
 
 const BootstrapDialog = styled(Dialog)(({theme}) => ({
     '& .MuiDialogContent-root': {
