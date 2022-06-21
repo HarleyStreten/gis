@@ -4,7 +4,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@boundlessgeo/sdk": "^2.7.5",
     "@coreui/coreui": "^4.1.6",
     "@coreui/react": "^4.2.2",
     "@emotion/react": "^11.9.0",
