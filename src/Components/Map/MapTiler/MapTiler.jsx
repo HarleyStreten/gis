@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
-import maplibregl from 'maplibre-gl';
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import maplibregl from '!maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import s from './MapTiler.module.css';
 import usePosts from "../../../Api/hooks/usePosts";

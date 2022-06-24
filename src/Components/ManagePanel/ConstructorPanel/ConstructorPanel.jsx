@@ -15,9 +15,6 @@ const ConstructorPanel = () => {
                 <div>
                     <Button text="Открыть"/>
                 </div>
-                <div className={s.cancelSubscribe}>
-                    <ButtonOutline text="Отменить рассылку отчета"/>
-                </div>
             </div>
         </div>
     );

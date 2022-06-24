@@ -7,6 +7,7 @@ import MapTiler from "./Components/Map/MapTiler/MapTiler";
 import Login from "./Components/Account/AccountDialog";
 import DialogContent from "@mui/material/DialogContent";
 import SignIn from "./Components/Account/Account";
+import Calendar from "./Components/ManagePanel/Calendar/Calendar";
 
 const App = () => {
     return (

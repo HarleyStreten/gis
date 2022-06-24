@@ -51,6 +51,11 @@
     background: #95A8AF;
 }
 
+.calendar {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
 .buildButton {
     position: absolute;
 }

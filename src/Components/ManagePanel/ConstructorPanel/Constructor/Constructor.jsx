@@ -22,7 +22,7 @@ const Constructor = () => {
             </div>
             <div className={s.footer}>
                 <div className={s.createReportButton}>
-                    <Button  text="Сформировать"/>
+                    <Button text="Сформировать"/>
                 </div>
             </div>
         </div>

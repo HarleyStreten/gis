@@ -9,14 +9,14 @@ const ConstructorChooseBlock = (props) => {
             <div>
                 <div className={s.headElemenents}>
                     <h3 className={s.head}>
-                        Добавить данные
+                        Выбор параметров
                     </h3>
                     <div className={s.checkboxAll}>
                         <CheckboxConstructor name="Выбрать все"/>
                     </div>
                 </div>
                 <div className={s.headTwo}>
-                    Добавление данных измерений уровня воды для текущего гидропоста
+                    Каждый параметр может отображаться в отчете под удобным для Вас названием. При необходимости Вы можете переименовать его
                 </div>
             </div>
             <ConstructorChooseParameter headParam="Название водного объекта" midParam="Название водного объекта"/>

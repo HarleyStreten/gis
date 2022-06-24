@@ -7,7 +7,7 @@
     grid-template-columns: 6fr 5.5fr;
     /* столбцы: имеется ширина сайта, один столбец будет занимать 2/12 ширины,
                                        а другой 10/12 */
-    grid-template-rows: 1fr 2.5fr 5fr 1.1fr;
+    grid-template-rows: 1fr 2.5fr 5fr 1.3fr;
     /* строки: одна строка сверху будет занимать 60px,
                                        а строка снизу всю оставшуюся часть*/
     grid-template-areas:
