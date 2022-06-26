@@ -3,11 +3,8 @@ import Gydroposts from "../Gydroposts/Gydroposts";
 import SearchBar from "../SearchBar/SearchBar";
 import Login from "../Account/AccountDialog";
 import Geolocation from "../Geolocation/Geolocation";
-import Map from "./Map/Map";
 import s from "./MapComponent.module.css";
 import {Link, Route, Routes} from "react-router-dom";
-import ManagePanel from "../ManagePanel/ManagePanel";
-import Constructor from "../ManagePanel/ConstructorPanel/Constructor/Constructor";
 import MapTiler from "./MapTiler/MapTiler";
 
 const MapComponent = () => {

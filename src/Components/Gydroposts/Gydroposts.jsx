@@ -51,10 +51,11 @@ export default function LongMenu() {
                     },
                 }}
             >
-                {posts?.map(({ id, name }) => (
-                    <MenuItem key={id} selected={name === 'р. Ай (Метели)'} onClick={handleClose}>
-                        {name}
+                {posts?.map(({ id, location }) => (
+                    <MenuItem key={id} selected={location === 'р. Ай (Метели)'} onClick={handleClose}>
+                        {location.longitude}
                     </MenuItem>
+
                 ))}
             </Menu>
         </div>

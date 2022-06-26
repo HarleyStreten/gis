@@ -3,11 +3,8 @@ import {Routes, Route, Link} from "react-router-dom";
 import MapComponent from "./Components/Map/MapComponent";
 import ManagePanel from "./Components/ManagePanel/ManagePanel";
 import Constructor from "./Components/ManagePanel/ConstructorPanel/Constructor/Constructor";
-import MapTiler from "./Components/Map/MapTiler/MapTiler";
-import Login from "./Components/Account/AccountDialog";
-import DialogContent from "@mui/material/DialogContent";
 import SignIn from "./Components/Account/Account";
-import Calendar from "./Components/ManagePanel/Calendar/Calendar";
+
 
 const App = () => {
     return (
